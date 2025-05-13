@@ -14,7 +14,7 @@
 
 
     <meta charset="UTF-8">
-      <meta name="description" content="NetBoost یک دستیار رایگان که به شما کمک می‌کند تا در شبکه‌های اجتماعی بدرخشید و بیش از 30 خدمت 
+      <meta name="description" content="NetBoost یک دستیار رایگان که به شما کمک می‌کند تا در شبکه‌های اجتماعی بدرخشید و بیش از 30 خدمت
      از جمله تولید هشتگ، ترندهای روز گوگل... ارائه می‌دهد." />
     <meta name="keywords" content="دستیار شبکه‌های اجتماعی, تولید هشتگ, کلمات کلیدی,
     ترند روز گوگل, موزیک ترند, ویدیو هوک, ابزارهای شبکه اجتماعی, آموزش آنلاین,
@@ -136,11 +136,11 @@ hover:opacity-[1] transition-all duration-700
 
 @livewire('components.footer')
 {{--<script src="{{asset('./service-worker.js')}}"></script>--}}
-@once
-    <script src="{{ asset('livewire/livewire.js') }}" defer></script>
-@endonce
+{{--@once--}}
+{{--    <script src="{{ asset('livewire/livewire.js') }}" defer></script>--}}
+{{--@endonce--}}
 
-
+@livewireScripts
 
 <script type="application/ld+json">
 {
