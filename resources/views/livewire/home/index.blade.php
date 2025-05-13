@@ -149,7 +149,7 @@
             <div class="circle-index mb-4 lg:mb-0"></div>
             <div class="mb-4 lg:mb-0">
                 <ul class="space-y-2">
-                    <li class="mx-[-50px]  transition-all duration-300 text-sky-900 hover:text-sky-600 list-none">
+                    <li class="mx-[-30px]  transition-all duration-300 text-sky-900 hover:text-sky-600 list-none">
                         <a wire:navigate href="{{route('terendgoogle')}}">ترند های گوگل</a>
                     </li>
 
@@ -165,7 +165,7 @@
                         <a wire:navigate href="{{route('hook')}}">ویدیو های هوک</a>
                     </li>
 
-                    <li class="mx-[-40px]  transition-all duration-300 text-sky-900 hover:text-sky-600 list-none">
+                    <li class="mx-[-30px]  transition-all duration-300 text-sky-900 hover:text-sky-600 list-none">
                         <a wire:navigate href="{{route('linkexchange')}}">تبادل لینک</a>
                     </li>
 
@@ -183,6 +183,22 @@
         </div>
     </div>
     <br>
+   <div class="aiagent max-w-5xl mx-auto px-4 bg-white dark:bg-gray-900 text-black dark:text-white">
+        <div class="flex flex-col lg:flex-row items-center justify-center">
+            <img src="{{asset('./img/defult/webp/telegramaiagent.webp')}}" width="300" height="300" alt="aiagent telegram" loading="lazy" class="img-ai-agent" />
+            <p>
+                امروز که کاربران به دنبال تجارب سریع، جذاب و مفید در ویدیو و سایتها هستند، نداشتن یک دستیار شبکه‌های اجتماعی هوشمند، به معنای از دست رفتن فرصت‌های طلایی است. با این راهکار کم‌هزینه، می‌توانید در افزایش تعامل و رشد فالوئر هدفمند پیشتاز باشید، بدون آنکه هزینه‌های سنگین استخدام نیروی انسانی یا خرید ابزارهای گران‌قیمت را متحمل شوید. اکنون زمان آن است که با این دستیار هوش مصنوعی، گامی بزرگ در مسیر دیجیتال مارکتینگ و برگشت سرمایه‌تان بردارید!
+            </p>
+        </div>
+        <br>
+        <div class="flex flex-col lg:flex-row items-center justify-center">
+            <p>
+                شما برای داشتن یک دستیار همه کاره از سرچ و تحقیق موضوع خاص فیلتر کردن مطالب بهینه سازی و فارسی سازیو در نهایت پست کردن درشبکه
+                های اجتماعی یک قدم فاصله دارید و با سفارش دستیار هوشمند در کمیت و کیفیت از تمامی رقبای خود یک قدم جلوتر خواهید بود
+            </p>
+            <img src="{{asset('./img/defult/webp/whatsappaiagent.webp')}}" width="300" height="300" alt="aiagent telegram" loading="lazy" class="img-ai-agent" />
+        </div>
+    </div>
     <br>
     <!-- بخش اهداف آینده -->
     <div class="future-index
