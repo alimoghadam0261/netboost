@@ -120,7 +120,9 @@
     <br>
     <br>
     <!-- بخش معرفی -->
-    <div class="notification-index">
+    <div
+        class="notification-index
+         w-full h-[500px] bg-[url('/img/defult/webp/girlnotification.webp')] bg-cover bg-no-repeat">
         <br>
         <h2 class="text-[35px] mx-4 sm:mx-10 md:mx-20 lg:mx-[200px]">معرفی</h2>
         <br>
@@ -148,23 +150,23 @@
                     <li class="mx-[-50px]  transition-all duration-300 text-sky-900 hover:text-sky-600 list-none">
                         <a wire:navigate href="{{route('terendgoogle')}}">ترند های گوگل</a>
                     </li>
-                   
+
                     <li class="mx-[-10px] sm:mx-0 transition-all duration-300 text-sky-900 hover:text-sky-600 list-none">
                         <a wire:navigate href="{{route('youtube')}}">دانلود فیلم از شبکه های اجتماعی</a>
                     </li>
-                   
+
                     <li class="mx-[10px]  transition-all duration-300 text-sky-900 hover:text-sky-600 list-none">
                         <a wire:navigate href="{{route('contentproduct')}}">محتوا سازی</a>
                     </li>
-                   
+
                     <li class="mx-[-10px] sm:mx-0 transition-all duration-300 text-sky-900 hover:text-sky-600 list-none">
                         <a wire:navigate href="{{route('hook')}}">ویدیو های هوک</a>
                     </li>
-                   
+
                     <li class="mx-[-40px]  transition-all duration-300 text-sky-900 hover:text-sky-600 list-none">
                         <a wire:navigate href="{{route('linkexchange')}}">تبادل لینک</a>
                     </li>
-                   
+
                 </ul>
             </div>
             <div dir="ltr" class="w-full lg:w-[40%] bg-sky-100 tetx-gray-800 rounded-[15px] text-center mx-4">
@@ -181,7 +183,8 @@
     <br>
     <br>
     <!-- بخش اهداف آینده -->
-    <div class="future-index">
+    <div class="future-index
+         w-full h-[500px] bg-[url('/img/defult/webp/bgbg.webp')] bg-cover bg-no-repeat">
         <br>
         <h2 class="text-[35px] mx-4 sm:mx-10 md:mx-20 lg:mx-[200px] ">اهداف آینده NetBoost</h2>
         <br>
