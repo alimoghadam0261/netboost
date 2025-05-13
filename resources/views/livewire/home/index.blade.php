@@ -122,7 +122,9 @@
     <!-- بخش معرفی -->
     <div
         class="notification-index
-         w-full h-[500px] bg-[url('/img/defult/webp/girlnotification.webp')] bg-cover bg-no-repeat">
+         w-full h-[500px] bg-cover bg-no-repeat"
+        style="background-image: url('/img/defult/webp/girlnotification.webp')"
+    >
         <br>
         <h2 class="text-[35px] mx-4 sm:mx-10 md:mx-20 lg:mx-[200px]">معرفی</h2>
         <br>
@@ -184,7 +186,9 @@
     <br>
     <!-- بخش اهداف آینده -->
     <div class="future-index
-         w-full h-[500px] bg-[url('/img/defult/webp/bgbg.webp')] bg-cover bg-no-repeat">
+         w-full h-[500px]  bg-cover bg-no-repeat"
+         style="background-image: url('/img/defult/webp/bgbg.webp')"
+    >
         <br>
         <h2 class="text-[35px] mx-4 sm:mx-10 md:mx-20 lg:mx-[200px] ">اهداف آینده NetBoost</h2>
         <br>
