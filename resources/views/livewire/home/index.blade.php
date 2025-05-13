@@ -216,11 +216,6 @@
             با حمایت و همراهی شما، این هدف به واقعیت تبدیل خواهد شد. 🚀✨
         </p>
     </div>
-    <br>
-
-
-
-    <br>
     <script>
         const chatbot = document.querySelector('#chatbot');
         const BtnChatbot = document.querySelector('#btn-chatbot');
