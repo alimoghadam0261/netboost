@@ -49,6 +49,6 @@ class Templateinsta extends Component
 
         $count = Tempaltestory::count();
 
-        return view('livewire.home.templateinsta', compact('images', 'count'));
+        return view('livewire.home.templateinsta', compact('images', 'count'))->title('تم کاور|template');
     }
 }

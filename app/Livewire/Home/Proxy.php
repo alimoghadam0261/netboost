@@ -21,6 +21,6 @@ class Proxy extends Component
 
     public function render()
     {
-        return view('livewire.home.proxy');
+        return view('livewire.home.proxy')->title('پروکسی تلگرام|proxy');
     }
 }

@@ -37,6 +37,6 @@ class Index extends Component
             return $query->orderBy('id', 'desc')->paginate(30);
         });
 
-        return view('livewire.home.tutorial.index', compact('tutorial'));
+        return view('livewire.home.tutorial.index', compact('tutorial'))->title('آموزش|tutorial');
     }
 }

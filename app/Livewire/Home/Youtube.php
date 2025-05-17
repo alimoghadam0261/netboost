@@ -62,6 +62,6 @@ class Youtube extends Component
 
     public function render()
     {
-        return view('livewire.home.youtube');
+        return view('livewire.home.youtube')->title('دانلودر|downloader');
     }
 }

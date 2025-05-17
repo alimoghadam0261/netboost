@@ -14,6 +14,6 @@ class Words extends Component
         $count = \App\Models\Word::count();
 
 
-        return view('livewire.home.words',compact('wodOfHuman','count'));
+        return view('livewire.home.words',compact('wodOfHuman','count'))->title('سخنان|words');
     }
 }

@@ -26,6 +26,6 @@ public $tutorials;
 
     public function render()
     {
-        return view('livewire.home.tutorial.single');
+        return view('livewire.home.tutorial.single')->title('توضیحات|content');
     }
 }

@@ -31,6 +31,6 @@ class Hook extends Component
             return Video::all()->count();
         });
 
-        return view('livewire.home.hook', compact('videos', 'count'));
+        return view('livewire.home.hook', compact('videos', 'count'))->title('ویدیو قلاب|hook');
     }
 }

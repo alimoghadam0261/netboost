@@ -25,6 +25,6 @@ class Effect extends Component
             return Sound::where('category', 'soundEffect')->paginate(30);
         });
 
-        return view('livewire.home.music.effect', compact('sounds'));
+        return view('livewire.home.music.effect', compact('sounds'))->title('افکت صدا|effect sound');
     }
 }

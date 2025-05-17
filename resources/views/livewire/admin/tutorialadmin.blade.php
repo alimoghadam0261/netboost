@@ -64,21 +64,33 @@
     @endif
 
     <br>
-        <h1 class="tetx-[20px]"><strong>تعداد : {{$count}}</strong></h1>
-    <div class="w-10/12 bg-white shadow-lg grid grid-cols-4 gap-4 p-4 ">
-        <br>
-        @foreach($tutorialss as $item)
-        <div class="w-[250px] h-[250px] rounded-md border-2">
-            <img src="{{ asset('storage/' . $item->pic) }}" alt="$item->title" class="w-full h-[150px] mr-[100px]" loading="lazy">
-            <h1 class="text-[16px]  mx-[50px]"><strong>{{$item->title}}</strong></h1>
-            <hr>
-            <button wire:click="delete({{ $item->id }})"
-            class="bg-red-500 rounded-md w-[150px] h-[40px] mx-[50px]"
-            >حذف</button>
-        </div>
-        @endforeach
 
+
+
+
+        <h1 class="tetx-[20px]"><strong>تعداد : {{$count}}</strong></h1>
+
+ <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-4">
+        @foreach($tutorialss as $item)
+            <div class="bg-white border border-gray-300 rounded-lg shadow-md overflow-hidden flex flex-col">
+                <img src="{{ asset('storage/' . $item->pic) }}"
+                     alt="{{ $item->title }}"
+                     class="w-full h-40 object-cover"
+                     loading="lazy">
+                <div class="p-4 flex flex-col justify-between flex-grow">
+                    <h2 class="text-[16px] font-semibold text-center mb-2">{{ $item->title }}</h2>
+                    <hr class="my-2">
+                    <button wire:click="delete({{ $item->id }})"
+                            class="bg-red-500 hover:bg-red-600 text-white py-2 rounded-md transition duration-200 w-full">
+                        حذف
+                    </button>
+                </div>
+            </div>
+        @endforeach
     </div>
+    
+
+
     <div class="mt-6 flex justify-center ">
         {{ $tutorialss->links('vendor.pagination.tailwind') }}
     </div>
@@ -93,7 +105,7 @@
 @push('scripts')
     <script>
         $('#content').summernote({
-            placeholder: 'Hello stand alone ui',
+            placeholder: 'توضیحات آموزش را اینجا وارد کنید قابلیت اضافه کردن عکس وویدیو هم وجود دارد',
             tabsize: 2,
             height: 120,
             toolbar: [

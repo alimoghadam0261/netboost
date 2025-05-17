@@ -23,7 +23,6 @@ Route::get('/Keywords',App\Livewire\Home\Keywords::class )->name('keywords');
 Route::get('/Imageread',App\Livewire\Home\Imageread::class )->name('imageread');
 
 
-Route::middleware('auth')->group(function () {
     Route::get('/Helpsite',App\Livewire\Home\Helpsite::class )->name('helpsite');
     Route::get('/Helpsite1',App\Livewire\Home\Helpsite1::class )->name('helpsite1');
     Route::get('/Helpsite2',App\Livewire\Home\Helpsite2::class )->name('helpsite2');
@@ -52,7 +51,6 @@ Route::middleware('auth')->group(function () {
     Route::get('/Linkexchange',App\Livewire\Home\Linkexchange::class )->name('linkexchange');
     Route::get('/Proxy',App\Livewire\Home\Proxy::class )->name('proxy');
 
-});
 
 
 

@@ -115,6 +115,6 @@ class Terendgoogle extends Component
 
     public function render()
     {
-        return view('livewire.home.terendgoogle');
+        return view('livewire.home.terendgoogle')->title('ترند گوگل|trends google');
     }
 }

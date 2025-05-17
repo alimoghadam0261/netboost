@@ -86,7 +86,7 @@ class Linkexchange extends Component
     {
         $links = \App\Models\Linkexchange::paginate(30);
         $count = \App\Models\Linkexchange::count();
-        return view('livewire.home.linkexchange', compact('links', 'count'));
+        return view('livewire.home.linkexchange', compact('links', 'count'))->title('تبادل|linkchange');
     }
 
 }

@@ -25,6 +25,6 @@ class Moamapic extends Component
 
         $count = \App\Models\Moamapic::count();
 
-        return view('livewire.home.moamapic', compact('moama', 'count'));
+        return view('livewire.home.moamapic', compact('moama', 'count'))->title('معما تصویری|pic omen');
     }
 }

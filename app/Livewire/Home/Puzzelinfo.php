@@ -27,6 +27,6 @@ class Puzzelinfo extends Component
 
     public function render()
     {
-        return view('livewire.home.puzzelinfo');
+        return view('livewire.home.puzzelinfo')->title('معما|omen');
     }
 }

@@ -25,6 +25,6 @@ class Musicterend extends Component
             return Sound::where('category', 'music')->paginate(30);
         });
 
-        return view('livewire.home.music.musicterend', compact('sounds'));
+        return view('livewire.home.music.musicterend', compact('sounds'))->title('موزیک ترند|trend music');
     }
 }

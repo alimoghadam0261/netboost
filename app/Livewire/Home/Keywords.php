@@ -30,6 +30,6 @@ class Keywords extends Component
 
     public function render()
     {
-        return view('livewire.home.keywords');
+        return view('livewire.home.keywords')->title('کلمات کلیدی|keywords');
     }
 }

@@ -90,6 +90,6 @@ class Login extends Component
 
     public function render()
     {
-        return view('livewire.auth.login');
+        return view('livewire.auth.login')->title('ورود|login');
     }
 }

@@ -51,6 +51,6 @@ class Hashtag extends Component
 
     public function render()
     {
-        return view('livewire.home.hashtag');
+        return view('livewire.home.hashtag')->title('هشتگ|hashtag');
     }
 }

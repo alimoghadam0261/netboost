@@ -8,6 +8,6 @@ class Helpsite extends Component
 {
     public function render()
     {
-        return view('livewire.home.helpsite')->title('لیست سایت ها |list sites');
+        return view('livewire.home.helpsite')->title('');
     }
 }

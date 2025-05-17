@@ -77,7 +77,7 @@
     <meta name="viewport" content="width=device-width,  initial-scale=1.0>
     <meta http-equiv=" X-UA-Compatible"  content="ie=edge">
 
-    <title>NetBoost | سایت رایگان برای آموزش و تبادل شبکه های اجتماعی</title>
+   <title>{{ $title ?? 'Page Title' }}</title>
 
     <!-- Manifest -->
     <link rel="manifest" href="{{ asset('manifest.json') }}">
