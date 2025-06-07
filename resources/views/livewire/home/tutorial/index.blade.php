@@ -34,6 +34,7 @@
             <label for="category" class="block mb-2 text-sm font-bold">فیلتر بر اساس دسته‌بندی:</label>
             <select wire:model.live="category" id="category" class="w-full p-2 border rounded-md bg-white dark:bg-gray-800 dark:text-white">
                 <option value="" selected>انتخاب کنید</option>
+                <option value="مقاله">مقاله</option>
                 <option value="سایت">آموزش سایت netboost</option>
                 <option value="اینستاگرام">آموزش اینستاگرام</option>
                 <option value="تلگرام">آموزش تلگرام</option>
@@ -50,7 +51,8 @@
         <!-- نمایش آموزش‌ها -->
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             @foreach($tutorial as $item)
-                <div class="w-full rounded-md border border-sky-400 bg-white shadow-md transition-all duration-300
+                @if($item->category ==="مقاله")
+                <div class="w-full rounded-md border border-sky-400 bg-yellow-100 shadow-md transition-all duration-300
                             transform hover:scale-105 hover:border-sky-600 flex flex-col items-center text-center p-4">
                     <img src="{{ asset('storage/'.$item->pic) }}" alt="{{ $item->title }}"
                          class="w-full h-[200px] object-cover rounded-md" loading="lazy">
@@ -62,6 +64,22 @@
                         </button>
                     </a>
                 </div>
+                @else
+
+                    <div class="w-full rounded-md border border-sky-400 bg-white shadow-md transition-all duration-300
+                            transform hover:scale-105 hover:border-sky-600 flex flex-col items-center text-center p-4">
+                        <img src="{{ asset('storage/'.$item->pic) }}" alt="{{ $item->title }}"
+                             class="w-full h-[200px] object-cover rounded-md" loading="lazy">
+                        <h2 class="text-[18px] font-bold mt-2">{{ $item->title }}</h2>
+                        <p class="text-gray-600">دسته بندی: {{ $item->category }}</p>
+                        <a href="{{ route('single', ['id' => $item->id]) }}">
+                            <button class="bg-sky-300 transition-all duration-500 hover:bg-sky-600 text-white py-2 px-4 mt-2 rounded-md">
+                                ادامه
+                            </button>
+                        </a>
+                    </div>
+
+                    @endif
             @endforeach
         </div>
 

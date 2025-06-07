@@ -27,6 +27,7 @@
             <label>دسته بندی</label>
             <select wire:model="category" class="border-2">
                 <option value="" selected>انتخاب کنید</option>
+                <option value="مقاله">مقاله</option>
                 <option value="سایت">آموزش سایت netboost</option>
                 <option value="اینستاگرام">آموزش اینستاگرام</option>
                 <option value="تلگرام">آموزش تلگرام</option>
@@ -88,7 +89,7 @@
             </div>
         @endforeach
     </div>
-    
+
 
 
     <div class="mt-6 flex justify-center ">
