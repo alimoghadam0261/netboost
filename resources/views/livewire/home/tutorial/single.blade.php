@@ -102,7 +102,6 @@
 
         <h2 class="text-[20px]">لینک های مفید</h2><br>
 
-                <h2 class="text-[20px]">لینک های مفید</h2><br>
         <ul>
             <li><a class="text-sky-500 hover:text-sky-700" href="{{route('tutorial')}}">آموزش های دیگر</a></li>
             <li><a class="text-sky-500 hover:text-sky-700" href="{{route('hashtag')}}">ساخت هشتگ </a></li>

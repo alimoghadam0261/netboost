@@ -52,7 +52,7 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             @foreach($tutorial as $item)
                 @if($item->category ==="مقاله")
-                <div class="w-full rounded-md border border-sky-400 bg-yellow-100 shadow-md transition-all duration-300
+                <div class="w-full rounded-md border border-sky-400 bg-green-200 shadow-md transition-all duration-300
                             transform hover:scale-105 hover:border-sky-600 flex flex-col items-center text-center p-4">
                     <img src="{{ asset('storage/'.$item->pic) }}" alt="{{ $item->title }}"
                          class="w-full h-[200px] object-cover rounded-md" loading="lazy">
