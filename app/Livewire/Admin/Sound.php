@@ -21,7 +21,7 @@ class Sound extends Component
     {
         $this->validate([
             'name' => 'required',
-           'sound' => 'required|mimes:mp3,wav,ogg|max:10240',
+           'sound' => 'required|mimes:mp3,wav,ogg|max:15000',
             'category' => 'required',
             'subcategory' => 'required'
         ]);

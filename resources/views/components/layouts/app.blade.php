@@ -141,6 +141,8 @@
 </div>
 
 
+
+
 <div class="donate-mobile rounded-lg fixed bottom-[4%] left-[1%] opacity-[0.5] pt-[5px]
 hover:opacity-[1] transition-all duration-300
 ">
@@ -160,7 +162,6 @@ hover:opacity-[1] transition-all duration-300
 {{--    <script src="{{ asset('livewire/livewire.js') }}" defer></script>--}}
 {{--@endonce--}}
 
-@livewireScripts
 
 <script type="application/ld+json">
 {

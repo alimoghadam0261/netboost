@@ -23,6 +23,7 @@
                 <select wire:model="subcategory">
                     <option value="">انتخاب کنید</option>
                     <option value="حیوانات">حیوانات</option>
+                    <option value="بکگراند">بکگراند</option>
                     <option value="طبیعت">طبیعت</option>
                     <option value="سلاح">سلاح و انفجار</option>
                     <option value="عمومی"> عمومی</option>
