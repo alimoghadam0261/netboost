@@ -1,9 +1,10 @@
 <div>
     <div class="container mx-auto p-4">
         {{-- فرم آپلود --}}
-        <form wire:submit.prevent="save" class="mb-6" enctype="multipart/form-data">
+        <form wire:submit.prevent="{{ $isEditing ? 'update' : 'save' }}" class="mb-6" enctype="multipart/form-data">
 
-            <div class="mb-4">
+
+        <div class="mb-4">
                 <input type="text" wire:model="title" name="title" class="w-full border-gray-300 rounded-lg p-2" placeholder="عنوان عکس">
                 @error('title') <span class="text-red-500">{{ $message }}</span> @enderror
             </div>
@@ -25,9 +26,19 @@
                 </select>
                 @error('category') <span class="text-red-500">{{ $message }}</span> @enderror
             </div>
-            <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition">
-                آپلود عکس
-            </button>
+            @if ($isEditing)
+                <button type="submit" class="bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600 transition">
+                    بروزرسانی
+                </button>
+                <button type="button" wire:click="cancelEdit" class="bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-600 transition ml-2">
+                    انصراف
+                </button>
+            @else
+                <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition">
+                    آپلود عکس
+                </button>
+            @endif
+
         </form>
 
         {{-- نمایش پیام موفقیت --}}
@@ -50,6 +61,10 @@
                         <button wire:click="delete({{ $img->id }})" class="inline-block bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 transition duration-300">
                             حذف
                         </button>
+                        <button wire:click="edit({{ $img->id }})" class="inline-block bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600 transition duration-300 ml-2">
+                            ویرایش
+                        </button>
+
                     </div>
                 </div>
             @endforeach
